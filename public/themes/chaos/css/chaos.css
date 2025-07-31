@@ -1,0 +1,47 @@
+body {
+  background-color: #fff !important;
+  color: #000;
+}
+
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    color: gray !important;
+}
+
+.mech-gradient {
+    background: linear-gradient(135deg, #2c2c2c, #43464b); /* dark gray to steel */
+    border: 1px solid #555;
+    box-shadow: 0 0 10px rgba(60, 60, 60, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e0e0e0;
+}
+
+.card {
+    background: linear-gradient(to bottom right, #2b2b2b, #1f1f1f);
+    color: #eee;
+    border: 1px solid #444;
+}
+
+.btn-dark {
+    background-color: #333;
+    border-color: #555;
+}
+
+.text-muted {
+  color: #d3d !important;
+  font-family: 'Garamond', serif;
+  letter-spacing: 0.5px;
+}

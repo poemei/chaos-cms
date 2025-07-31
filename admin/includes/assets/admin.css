@@ -1,0 +1,142 @@
+/* Admin Base Styles */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color: #444;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background: #444;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button.loading::after {
+  content: '...';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.admin-header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.admin-header h1 {
+  margin: 0;
+}
+
+.admin-nav a {
+  color: #000; /* changed from #ddd to black */
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.admin-nav a:hover {
+  text-decoration: underline;
+  color: #444; /* optional: darker on hover */
+}
+
+.admin-main {
+  padding: 2rem;
+  background: #fff;
+  min-height: 80vh;
+}
+
+.admin-footer {
+  background: #222;
+  color: #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.admin-footer a {
+  color: #000; /* changed from #ddd to black */
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.admin-footer a:hover {
+  text-decoration: underline;
+  color: #444; /* optional: darker on hover */
+}
+
+.admin-tile {
+  display: inline-block;
+  text-align: center;
+  margin: 1rem;
+  width: 100px;
+  text-decoration: none;
+}
+
+.tile-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto 0.5rem;
+  object-fit: contain;
+}
+
+.tile-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.admin-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
